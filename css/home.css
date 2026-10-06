@@ -1,0 +1,1657 @@
+/* =========================================================
+   PREMIUM HOME HERO
+========================================================= */
+
+.hero {
+    position: relative;
+    min-height: 720px;
+    overflow: hidden;
+
+    display: flex;
+    align-items: center;
+
+    background: #063f47;
+}
+
+
+/* Background image */
+
+.hero-background {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+}
+
+
+.hero-background img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    object-position: center;
+}
+
+
+/* Dark cinematic overlay */
+
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(3, 43, 50, 0.97) 0%,
+            rgba(4, 57, 64, 0.90) 38%,
+            rgba(5, 70, 77, 0.58) 65%,
+            rgba(5, 70, 77, 0.20) 100%
+        );
+}
+
+
+/* Hero layout */
+
+.hero-container {
+    position: relative;
+    z-index: 2;
+
+    width: 90%;
+    max-width: 1200px;
+
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 60px;
+}
+
+
+/* Main content */
+
+.hero-content {
+    width: auto;
+    max-width: 700px;
+
+    margin: 0;
+
+    color: #ffffff;
+}
+
+
+.hero-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+
+    margin-bottom: 25px;
+
+    color: #bdecef;
+
+    font-size: 12px;
+    font-weight: 700;
+
+    letter-spacing: 2px;
+}
+
+
+.hero-tag::before {
+    content: "";
+
+    width: 32px;
+    height: 2px;
+
+    background: #76e1e8;
+}
+
+
+.hero h1 {
+    max-width: 720px;
+
+    margin: 0 0 25px;
+
+    color: #ffffff;
+
+    font-size: clamp(48px, 6vw, 76px);
+
+    line-height: 1.02;
+
+    letter-spacing: -2.5px;
+}
+
+
+.hero h1 span {
+    color: #76e1e8;
+}
+
+
+.hero p {
+    max-width: 590px;
+
+    margin: 0 0 35px;
+
+    color: rgba(255, 255, 255, 0.84);
+
+    font-size: 17px;
+
+    line-height: 1.75;
+}
+
+
+/* Buttons */
+
+.hero-buttons {
+    display: flex;
+    align-items: center;
+
+    gap: 15px;
+
+    flex-wrap: wrap;
+}
+
+
+.hero-buttons .btn-primary {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+}
+
+
+.hero-arrow {
+    font-size: 20px;
+
+    transition:
+        transform 0.25s ease;
+}
+
+
+.hero-buttons .btn-primary:hover .hero-arrow {
+    transform: translateX(5px);
+}
+
+
+.hero-secondary-btn {
+    min-height: 50px;
+
+    padding: 0 25px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid rgba(255, 255, 255, 0.45);
+    border-radius: 6px;
+
+    color: #ffffff;
+
+    font-size: 14px;
+    font-weight: 700;
+
+    transition:
+        background 0.25s ease,
+        border-color 0.25s ease;
+}
+
+
+.hero-secondary-btn:hover {
+    background: rgba(255, 255, 255, 0.12);
+
+    border-color: rgba(255, 255, 255, 0.8);
+}
+
+
+/* Trust points */
+
+.hero-trust {
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: 25px;
+
+    margin-top: 38px;
+}
+
+
+.hero-trust-item {
+    display: flex;
+    align-items: center;
+
+    gap: 9px;
+
+    color: rgba(255, 255, 255, 0.80);
+
+    font-size: 13px;
+}
+
+
+.hero-check {
+    width: 21px;
+    height: 21px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: rgba(118, 225, 232, 0.16);
+
+    color: #8be0e5;
+
+    font-size: 11px;
+}
+
+
+/* Floating card */
+
+.hero-card {
+    width: 325px;
+
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: flex-start;
+
+    gap: 17px;
+
+    padding: 25px;
+
+    border: 1px solid rgba(255, 255, 255, 0.20);
+    border-radius: 15px;
+
+    background: rgba(255, 255, 255, 0.12);
+
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+
+    box-shadow:
+        0 25px 60px rgba(0, 0, 0, 0.20);
+}
+
+
+.hero-card-icon {
+    width: 44px;
+    height: 44px;
+
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 10px;
+
+    background: #ffffff;
+
+    color: var(--primary);
+
+    font-size: 19px;
+}
+
+
+.hero-card-content > span {
+    display: block;
+
+    margin-bottom: 7px;
+
+    color: #bdecef;
+
+    font-size: 10px;
+    font-weight: 700;
+
+    letter-spacing: 1.5px;
+}
+
+
+.hero-card h3 {
+    margin: 0 0 13px;
+
+    color: #ffffff;
+
+    font-size: 20px;
+
+    line-height: 1.3;
+}
+
+
+.hero-card a {
+    color: #8be0e5;
+
+    font-size: 13px;
+    font-weight: 700;
+}
+
+
+/* =========================================================
+   TRUST STRIP
+========================================================= */
+
+.hero-strip {
+    position: relative;
+    z-index: 5;
+
+    background: #ffffff;
+
+    border-bottom: 1px solid var(--border);
+
+    box-shadow:
+        0 12px 35px rgba(0, 0, 0, 0.05);
+}
+
+
+.hero-strip-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    min-height: 105px;
+}
+
+
+.hero-strip-item {
+    display: flex;
+    align-items: center;
+
+    gap: 15px;
+
+    padding: 20px 25px;
+
+    border-right: 1px solid var(--border);
+}
+
+
+.hero-strip-item:last-child {
+    border-right: none;
+}
+
+
+.hero-strip-icon {
+    width: 40px;
+    height: 40px;
+
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: var(--light-bg);
+
+    color: var(--primary);
+
+    font-size: 10px;
+    font-weight: 700;
+}
+
+
+.hero-strip-item strong {
+    display: block;
+
+    margin-bottom: 3px;
+
+    color: var(--text);
+
+    font-size: 14px;
+}
+
+
+.hero-strip-item span {
+    display: block;
+
+    color: var(--muted);
+
+    font-size: 11px;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 1000px) {
+
+    .hero-container {
+        gap: 35px;
+    }
+
+
+    .hero-card {
+        width: 285px;
+    }
+
+
+    .hero-strip-grid {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+
+    .hero-strip-item:nth-child(2) {
+        border-right: none;
+    }
+
+
+    .hero-strip-item:nth-child(-n+2) {
+        border-bottom: 1px solid var(--border);
+    }
+
+}
+
+
+@media (max-width: 768px) {
+
+    .hero {
+        min-height: 730px;
+    }
+
+
+    .hero-overlay {
+        background:
+            linear-gradient(
+                180deg,
+                rgba(3, 43, 50, 0.88),
+                rgba(3, 43, 50, 0.97)
+            );
+    }
+
+
+    .hero-container {
+        flex-direction: column;
+
+        align-items: flex-start;
+        justify-content: center;
+
+        gap: 35px;
+    }
+
+
+    .hero h1 {
+        font-size: 48px;
+
+        letter-spacing: -1.5px;
+    }
+
+
+    .hero p {
+        font-size: 16px;
+    }
+
+
+    .hero-trust {
+        flex-direction: column;
+
+        gap: 13px;
+    }
+
+
+    .hero-card {
+        width: 100%;
+        max-width: 430px;
+    }
+
+
+    .hero-strip-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .hero-strip-item {
+        border-right: none;
+
+        border-bottom: 1px solid var(--border);
+    }
+
+
+    .hero-strip-item:last-child {
+        border-bottom: none;
+    }
+
+}
+
+
+@media (max-width: 480px) {
+
+    .hero {
+        min-height: 760px;
+    }
+
+
+    .hero h1 {
+        font-size: 41px;
+    }
+
+
+    .hero-buttons {
+        width: 100%;
+
+        flex-direction: column;
+
+        align-items: stretch;
+    }
+
+
+    .hero-buttons .btn,
+    .hero-secondary-btn {
+        width: 100%;
+    }
+
+
+    .hero-card {
+        padding: 20px;
+    }
+}
+    /* =========================================================
+   HOME - TESTIMONIALS
+========================================================= */
+
+.testimonials-section {
+    padding: 110px 0;
+    background: #f5fafb;
+}
+
+.testimonials-section .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.testimonials-heading {
+    max-width: 720px;
+    margin: 0 auto 55px;
+    text-align: center;
+}
+
+.testimonials-heading .section-tag {
+    display: inline-block;
+    margin-bottom: 14px;
+    color: var(--primary);
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.testimonials-heading h2 {
+    margin: 0 0 18px;
+    color: var(--text);
+    font-size: 46px;
+    line-height: 1.15;
+    letter-spacing: -1px;
+}
+
+.testimonials-heading p {
+    margin: 0 auto;
+    max-width: 600px;
+    color: var(--muted);
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+
+/* TESTIMONIAL GRID */
+
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+
+/* CARD */
+
+.testimonial-card {
+    position: relative;
+
+    padding: 32px;
+
+    background: #ffffff;
+
+    border: 1px solid #e5eef0;
+    border-radius: 18px;
+
+    box-shadow: 0 10px 30px rgba(0, 50, 60, 0.05);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-6px);
+
+    box-shadow:
+        0 20px 45px rgba(0, 50, 60, 0.10);
+}
+
+
+/* TOP */
+
+.testimonial-top {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+
+    margin-bottom: 20px;
+}
+
+.patient-avatar {
+    width: 52px;
+    height: 52px;
+
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #e8f7f8;
+
+    color: var(--primary);
+
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.testimonial-top h3 {
+    margin: 0 0 3px;
+
+    color: var(--text);
+
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.testimonial-top span {
+    color: var(--muted);
+
+    font-size: 13px;
+}
+
+
+/* STARS */
+
+.testimonial-stars {
+    margin-bottom: 17px;
+
+    color: #e5a72c;
+
+    font-size: 16px;
+
+    letter-spacing: 3px;
+}
+
+
+/* TEXT */
+
+.testimonial-text {
+    margin: 0;
+
+    color: #63757a;
+
+    font-size: 15px;
+
+    line-height: 1.8;
+}
+
+
+/* NOTE */
+
+.testimonial-note {
+    margin: 30px 0 0;
+
+    text-align: center;
+
+    color: #8b999d;
+
+    font-size: 12px;
+}
+
+
+/* =========================================================
+   HOME - FAQ
+========================================================= */
+
+.faq-section {
+    padding: 110px 0;
+
+    background: #ffffff;
+}
+
+.faq-section .container {
+    width: 90%;
+    max-width: 1200px;
+
+    margin: 0 auto;
+}
+
+.faq-layout {
+    display: grid;
+
+    grid-template-columns: 0.85fr 1.15fr;
+
+    gap: 90px;
+
+    align-items: start;
+}
+
+
+/* LEFT SIDE */
+
+.faq-intro {
+    max-width: 460px;
+
+    position: sticky;
+
+    top: 100px;
+}
+
+.faq-intro .section-tag {
+    display: inline-block;
+
+    margin-bottom: 15px;
+
+    color: var(--primary);
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+}
+
+.faq-intro h2 {
+    margin: 0 0 20px;
+
+    color: var(--text);
+
+    font-size: 46px;
+
+    line-height: 1.12;
+
+    letter-spacing: -1px;
+}
+
+.faq-intro p {
+    margin: 0 0 25px;
+
+    color: var(--muted);
+
+    font-size: 16px;
+
+    line-height: 1.75;
+}
+
+.faq-intro .text-link {
+    color: var(--primary);
+
+    font-size: 14px;
+
+    font-weight: 700;
+}
+
+.faq-intro .text-link:hover {
+    color: var(--primary-dark);
+}
+
+
+/* FAQ LIST */
+
+.faq-list {
+    border-top: 1px solid #dfeaec;
+}
+
+
+/* FAQ ITEM */
+
+.faq-item {
+    border-bottom: 1px solid #dfeaec;
+}
+
+
+/* QUESTION */
+
+.faq-question {
+    width: 100%;
+
+    min-height: 78px;
+
+    padding: 20px 0;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 25px;
+
+    border: none;
+
+    background: transparent;
+
+    color: var(--text);
+
+    font-family: inherit;
+
+    font-size: 16px;
+
+    font-weight: 700;
+
+    line-height: 1.5;
+
+    text-align: left;
+
+    cursor: pointer;
+}
+
+.faq-question:hover {
+    color: var(--primary);
+}
+
+
+/* PLUS */
+
+.faq-icon {
+    width: 36px;
+    height: 36px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid #dce8ea;
+
+    border-radius: 50%;
+
+    background: #ffffff;
+
+    color: var(--primary);
+
+    font-size: 21px;
+
+    font-weight: 400;
+
+    transition:
+        transform 0.3s ease,
+        background 0.3s ease;
+}
+
+
+/* ANSWER */
+
+.faq-answer {
+    display: none;
+
+    padding: 0 60px 25px 0;
+}
+
+.faq-answer p {
+    margin: 0;
+
+    color: var(--muted);
+
+    font-size: 15px;
+
+    line-height: 1.8;
+}
+
+
+/* ACTIVE */
+
+.faq-item.active .faq-answer {
+    display: block;
+}
+
+.faq-item.active .faq-icon {
+    transform: rotate(45deg);
+
+    background: #eef9fa;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 900px) {
+
+    .testimonials-grid {
+        grid-template-columns: 1fr;
+
+        max-width: 650px;
+
+        margin: 0 auto;
+    }
+
+    .faq-layout {
+        grid-template-columns: 1fr;
+
+        gap: 50px;
+    }
+
+    .faq-intro {
+        max-width: 650px;
+
+        position: static;
+    }
+
+}
+
+
+@media (max-width: 768px) {
+
+    .testimonials-section,
+    .faq-section {
+        padding: 75px 0;
+    }
+
+    .testimonials-heading h2,
+    .faq-intro h2 {
+        font-size: 35px;
+    }
+
+    .testimonial-card {
+        padding: 27px;
+    }
+
+    .faq-question {
+        min-height: 70px;
+
+        font-size: 15px;
+    }
+
+    .faq-answer {
+        padding-right: 35px;
+    }
+
+}
+
+
+@media (max-width: 480px) {
+
+    .testimonials-section .container,
+    .faq-section .container {
+        width: 88%;
+    }
+
+    .testimonials-heading h2,
+    .faq-intro h2 {
+        font-size: 31px;
+    }
+
+    .testimonial-card {
+        padding: 23px;
+    }
+
+}
+/* =========================================================
+   HOME - CLINIC INTRODUCTION
+========================================================= */
+
+.home-intro-section {
+    padding: 110px 0;
+    background: #ffffff;
+}
+
+.home-intro {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: center;
+}
+
+/* Image */
+
+.home-intro-image {
+    position: relative;
+    overflow: hidden;
+    border-radius: 18px;
+}
+
+.home-intro-image img {
+    width: 100%;
+    height: 470px;
+    object-fit: cover;
+}
+
+/* Content */
+
+.home-intro-content {
+    max-width: 520px;
+}
+
+.home-intro-content .section-tag {
+    display: inline-block;
+    margin-bottom: 15px;
+
+    color: var(--primary);
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.home-intro-content h2 {
+    margin: 0 0 22px;
+
+    color: var(--text);
+    font-size: 44px;
+    line-height: 1.15;
+    letter-spacing: -1px;
+}
+
+.home-intro-content h2 span {
+    color: var(--primary);
+}
+
+.home-intro-content p {
+    margin: 0 0 17px;
+
+    color: var(--muted);
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+.home-intro-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+
+    margin-top: 12px;
+
+    color: var(--primary);
+    font-size: 14px;
+    font-weight: 700;
+
+    transition: gap 0.25s ease;
+}
+
+.home-intro-link:hover {
+    gap: 15px;
+    color: var(--primary-dark);
+}
+
+
+/* =========================================================
+   CLINIC INTRODUCTION - RESPONSIVE
+========================================================= */
+
+@media (max-width: 900px) {
+
+    .home-intro {
+        grid-template-columns: 1fr;
+        gap: 45px;
+    }
+
+    .home-intro-content {
+        max-width: 650px;
+    }
+
+    .home-intro-image img {
+        height: 420px;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .home-intro-section {
+        padding: 75px 0;
+    }
+
+    .home-intro-content h2 {
+        font-size: 36px;
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    .home-intro {
+        width: 88%;
+    }
+
+    .home-intro-image img {
+        height: 300px;
+    }
+
+    .home-intro-content h2 {
+        font-size: 31px;
+    }
+
+    .home-intro-content p {
+        font-size: 15px;
+    }
+
+}
+/* =========================================================
+   HOME - FEATURED TREATMENTS
+========================================================= */
+
+.featured-treatments-section {
+    padding: 110px 0;
+    background: var(--light-bg);
+}
+
+.featured-treatments-section .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.featured-treatments-heading {
+    max-width: 650px;
+    margin: 0 auto 55px;
+    text-align: center;
+}
+
+.featured-treatments-heading .section-tag {
+    display: inline-block;
+    margin-bottom: 14px;
+
+    color: var(--primary);
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.featured-treatments-heading h2 {
+    margin: 0 0 18px;
+
+    color: var(--text);
+    font-size: 44px;
+    line-height: 1.15;
+    letter-spacing: -1px;
+}
+
+.featured-treatments-heading p {
+    margin: 0 auto;
+
+    color: var(--muted);
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+
+/* Cards */
+
+.featured-treatments-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 22px;
+}
+
+.treatment-card {
+    overflow: hidden;
+
+    background: #ffffff;
+    border: 1px solid var(--border);
+    border-radius: 16px;
+
+    box-shadow: 0 8px 25px rgba(0, 50, 60, 0.04);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.treatment-card:hover {
+    transform: translateY(-6px);
+
+    box-shadow:
+        0 18px 40px rgba(0, 50, 60, 0.10);
+}
+
+
+/* Card image */
+
+.treatment-card-image {
+    overflow: hidden;
+}
+
+.treatment-card-image img {
+    width: 100%;
+    height: 210px;
+
+    object-fit: cover;
+
+    transition: transform 0.4s ease;
+}
+
+.treatment-card:hover .treatment-card-image img {
+    transform: scale(1.04);
+}
+
+
+/* Card content */
+
+.treatment-card-content {
+    padding: 25px;
+}
+
+.treatment-number {
+    display: block;
+    margin-bottom: 9px;
+
+    color: var(--primary);
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.treatment-card h3 {
+    margin: 0 0 10px;
+
+    color: var(--text);
+    font-size: 18px;
+    line-height: 1.35;
+}
+
+.treatment-card p {
+    min-height: 70px;
+    margin: 0 0 18px;
+
+    color: var(--muted);
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+.treatment-card a {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+
+    color: var(--primary);
+    font-size: 13px;
+    font-weight: 700;
+
+    transition: gap 0.25s ease;
+}
+
+.treatment-card a:hover {
+    gap: 11px;
+}
+
+
+/* View all button */
+
+.featured-treatments-button {
+    margin-top: 45px;
+    text-align: center;
+}
+
+.featured-treatments-button .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+}
+
+
+/* =========================================================
+   FEATURED TREATMENTS - RESPONSIVE
+========================================================= */
+
+@media (max-width: 1050px) {
+
+    .featured-treatments-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .featured-treatments-section {
+        padding: 75px 0;
+    }
+
+    .featured-treatments-heading h2 {
+        font-size: 36px;
+    }
+
+}
+
+@media (max-width: 520px) {
+
+    .featured-treatments-section .container {
+        width: 88%;
+    }
+
+    .featured-treatments-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .featured-treatments-heading h2 {
+        font-size: 31px;
+    }
+
+    .treatment-card-image img {
+        height: 220px;
+    }
+
+}
+/* =========================================================
+   HOME - WHY DANTO  Dental Studio
+========================================================= */
+
+.why-smilecare-section {
+    padding: 100px 0;
+    background: #ffffff;
+}
+
+.why-smilecare-section .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.why-smilecare-heading {
+    max-width: 680px;
+    margin: 0 auto 55px;
+    text-align: center;
+}
+
+.why-smilecare-heading .section-tag {
+    display: inline-block;
+    margin-bottom: 14px;
+
+    color: var(--primary);
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.why-smilecare-heading h2 {
+    margin: 0 0 18px;
+
+    color: var(--text);
+    font-size: 44px;
+    line-height: 1.15;
+    letter-spacing: -1px;
+}
+
+.why-smilecare-heading p {
+    margin: 0 auto;
+
+    color: var(--muted);
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+
+/* Points */
+
+.why-smilecare-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0;
+
+    border-top: 1px solid var(--border);
+    border-left: 1px solid var(--border);
+}
+
+.why-smilecare-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+
+    padding: 32px;
+
+    border-right: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+
+    transition: background 0.25s ease;
+}
+
+.why-smilecare-item:hover {
+    background: var(--light-bg);
+}
+
+.why-smilecare-icon {
+    width: 45px;
+    height: 45px;
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #eaf7f8;
+    color: var(--primary);
+
+    font-size: 11px;
+    font-weight: 700;
+}
+
+.why-smilecare-item h3 {
+    margin: 0 0 7px;
+
+    color: var(--text);
+    font-size: 17px;
+}
+
+.why-smilecare-item p {
+    margin: 0;
+
+    color: var(--muted);
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   WHY DANTO Dental Studio- RESPONSIVE
+========================================================= */
+
+@media (max-width: 768px) {
+
+    .why-smilecare-section {
+        padding: 75px 0;
+    }
+
+    .why-smilecare-heading h2 {
+        font-size: 36px;
+    }
+
+    .why-smilecare-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    .why-smilecare-section .container {
+        width: 88%;
+    }
+
+    .why-smilecare-heading h2 {
+        font-size: 31px;
+    }
+
+    .why-smilecare-item {
+        padding: 25px 20px;
+        gap: 15px;
+    }
+
+}
+/* =========================================================
+   HOME - DENTIST PREVIEW
+========================================================= */
+
+.dentist-preview-section {
+    padding: 110px 0;
+    background: var(--light-bg);
+}
+
+.dentist-preview {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    gap: 80px;
+    align-items: center;
+}
+
+.dentist-preview-image {
+    overflow: hidden;
+    border-radius: 18px;
+}
+
+.dentist-preview-image img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+.dentist-preview-content {
+    max-width: 540px;
+}
+
+.dentist-preview-content .section-tag {
+    display: inline-block;
+    margin-bottom: 15px;
+
+    color: var(--primary);
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.dentist-preview-content h2 {
+    margin: 0 0 22px;
+
+    color: var(--text);
+    font-size: 44px;
+    line-height: 1.15;
+    letter-spacing: -1px;
+}
+
+.dentist-preview-content h2 span {
+    color: var(--primary);
+}
+
+.dentist-preview-content p {
+    margin: 0 0 16px;
+
+    color: var(--muted);
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+.dentist-preview-details {
+    margin: 28px 0 22px;
+    padding-left: 18px;
+
+    border-left: 3px solid var(--primary);
+}
+
+.dentist-preview-details strong {
+    display: block;
+
+    color: var(--text);
+    font-size: 17px;
+}
+
+.dentist-preview-details span {
+    display: block;
+    margin-top: 3px;
+
+    color: var(--muted);
+    font-size: 13px;
+}
+
+.dentist-preview-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+
+    color: var(--primary);
+    font-size: 14px;
+    font-weight: 700;
+
+    transition: gap 0.25s ease;
+}
+
+.dentist-preview-link:hover {
+    gap: 14px;
+    color: var(--primary-dark);
+}
+
+
+/* =========================================================
+   DENTIST PREVIEW - RESPONSIVE
+========================================================= */
+
+@media (max-width: 900px) {
+
+    .dentist-preview {
+        grid-template-columns: 1fr;
+        gap: 45px;
+    }
+
+    .dentist-preview-content {
+        max-width: 650px;
+    }
+
+    .dentist-preview-image img {
+        height: 430px;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .dentist-preview-section {
+        padding: 75px 0;
+    }
+
+    .dentist-preview-content h2 {
+        font-size: 36px;
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    .dentist-preview {
+        width: 88%;
+    }
+
+    .dentist-preview-image img {
+        height: 350px;
+    }
+
+    .dentist-preview-content h2 {
+        font-size: 31px;
+    }
+
+    .dentist-preview-content p {
+        font-size: 15px;
+    }
+
+}
+/* =========================================================
+   GLOBAL TOOTH CURSOR
+========================================================= */
+
+.featured-treatments-section,
+.featured-treatments-section * {
+    cursor: url("../images/tooth-cursor.png") 16 16, auto !important;
+}

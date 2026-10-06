@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Book an Appointment | DANTO Dental Studio</title>
+
+    <link rel="stylesheet"
+          href="../css/style.css">
+
+</head>
+
+<body>
+
+
+<!-- HEADER -->
+
+   <header>
+
+    <nav class="navbar">
+
+        <!-- LOGO -->
+        <a href="../index.html" class="logo">
+             DANTO <span>Dental Studio</span>
+        </a>
+
+
+        <!-- MOBILE MENU -->
+        <button class="menu-toggle"
+                type="button"
+                aria-label="Open navigation menu"
+                aria-expanded="false">
+
+            <span></span>
+            <span></span>
+            <span></span>
+
+        </button>
+
+
+        <!-- NAVIGATION -->
+        <div class="nav-menu">
+
+            <ul class="nav-links">
+
+                <li>
+                    <a href="../index.html">
+                        Home
+                    </a>
+                </li>
+
+                <li>
+                    <a href="about.html" class="active">
+                        About
+                    </a>
+                </li>
+
+                <li>
+                    <a href="expertise.html">
+                        Expertise
+                    </a>
+                </li>
+
+                <li>
+                    <a href="treatments.html">
+                        Treatments
+                    </a>
+                </li>
+
+                <li>
+                    <a href="dentist.html">
+                        Our Dentist
+                    </a>
+                </li>
+
+                <li>
+                    <a href="gallery.html">
+                        Gallery
+                    </a>
+                </li>
+
+                <li>
+                    <a href="contact.html">
+                        Contact
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+
+    </nav>
+
+</header>
+
+
+<!-- APPOINTMENT HERO -->
+<section class="appointment-hero">
+
+    <div class="appointment-hero-content">
+
+        <span class="section-tag">
+            APPOINTMENTS
+        </span>
+
+        <h1>
+            Book Your Dental Consultation
+        </h1>
+
+        <p>
+            Tell us a little about your needs and
+            preferred appointment time. Our clinic
+            team can get in touch with you.
+        </p>
+
+    </div>
+
+</section>
+
+
+
+<!-- APPOINTMENT SECTION -->
+<section class="appointment-section">
+
+    <div class="container">
+
+        <div class="appointment-grid">
+
+
+            <!-- LEFT -->
+            <div class="appointment-info">
+
+                <span class="section-tag">
+                    GET STARTED
+                </span>
+
+                <h2>
+                    Let's Take Care
+                    of Your Smile.
+                </h2>
+
+                <p>
+                    Whether you need a routine check-up,
+                    have a dental concern, or want to
+                    discuss a treatment option, you can
+                    send us an appointment request.
+                </p>
+
+
+                <div class="appointment-info-list">
+
+                    <div class="appointment-info-item">
+
+                        <div class="appointment-info-icon">
+                            01
+                        </div>
+
+                        <div>
+                            <h3>
+                                Choose a Treatment
+                            </h3>
+
+                            <p>
+                                Select the service you are
+                                interested in discussing.
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="appointment-info-item">
+
+                        <div class="appointment-info-icon">
+                            02
+                        </div>
+
+                        <div>
+                            <h3>
+                                Select Your Preference
+                            </h3>
+
+                            <p>
+                                Tell us your preferred date
+                                and time.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="appointment-info-item">
+
+                        <div class="appointment-info-icon">
+                            03
+                        </div>
+
+                        <div>
+
+                            <h3>
+                                We'll Contact You
+                            </h3>
+
+                            <p>
+                                The clinic team can contact
+                                you to discuss availability.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- FORM -->
+            <div class="appointment-form-wrapper">
+
+                <form id="appointmentForm"
+                      class="appointment-form">
+
+
+                    <div class="form-heading">
+
+                        <h2>
+                            Request an Appointment
+                        </h2>
+
+                        <p>
+                            Fields marked with * are required.
+                        </p>
+
+                    </div>
+
+
+                    <div class="form-row">
+
+
+                        <div class="form-group">
+
+                            <label for="patientName">
+                                Full Name *
+                            </label>
+
+                            <input
+                                type="text"
+                                id="patientName"
+                                name="patientName"
+                                placeholder="Enter your name"
+                                required>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="patientPhone">
+                                Mobile Number *
+                            </label>
+
+                            <input
+                                type="tel"
+                                id="patientPhone"
+                                name="patientPhone"
+                                placeholder="Enter mobile number"
+                                required>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="form-row">
+
+
+                        <div class="form-group">
+
+                            <label for="treatment">
+                                Treatment *
+                            </label>
+
+                            <select
+                                id="treatment"
+                                name="treatment"
+                                required>
+
+                                <option value="">
+                                    Select treatment
+                                </option>
+
+                                <option>
+                                    Dental Consultation
+                                </option>
+
+                                <option>
+                                    Dental Cleaning
+                                </option>
+
+                                <option>
+                                    Root Canal Treatment
+                                </option>
+
+                                <option>
+                                    Dental Implants
+                                </option>
+
+                                <option>
+                                    Cosmetic Dentistry
+                                </option>
+
+                                <option>
+                                    Other
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="appointmentDate">
+                                Preferred Date *
+                            </label>
+
+                            <input
+                                type="date"
+                                id="appointmentDate"
+                                name="appointmentDate"
+                                required>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="form-group">
+
+                        <label for="appointmentTime">
+                            Preferred Time
+                        </label>
+
+                        <select
+                            id="appointmentTime"
+                            name="appointmentTime">
+
+                            <option value="">
+                                Select preferred time
+                            </option>
+
+                            <option>
+                                Morning
+                            </option>
+
+                            <option>
+                                Afternoon
+                            </option>
+
+                            <option>
+                                Evening
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+
+                    <div class="form-group">
+
+                        <label for="patientMessage">
+                            Message
+                        </label>
+
+                        <textarea
+                            id="patientMessage"
+                            name="patientMessage"
+                            rows="5"
+                            placeholder="Tell us briefly about your concern..."></textarea>
+
+                    </div>
+
+
+                    <button
+                        type="submit"
+                        class="appointment-submit">
+
+                        Request Appointment
+
+                    </button>
+
+
+                    <p class="appointment-disclaimer">
+                        This is an appointment request only.
+                        The clinic team can confirm the
+                        appointment based on availability.
+                    </p>
+
+                    <div id="appointmentSuccess"
+                         class="appointment-success">
+
+                        Thank you. Your appointment request
+                        has been recorded for this demo.
+
+                    </div>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- CTA -->
+<section class="appointment-cta">
+
+    <div class="appointment-cta-content">
+
+        <span class="section-tag">
+            NEED HELP?
+        </span>
+
+        <h2>
+            Prefer to Speak With Us?
+        </h2>
+
+        <p>
+            You can also contact the clinic directly
+            for questions about appointments and treatments.
+        </p>
+
+        <a href="contact.html"
+           class="btn btn-light">
+
+            Contact the Clinic
+
+        </a>
+
+    </div>
+
+</section>
+
+
+
+<!-- FOOTER -->
+<footer class="site-footer">
+
+    <div class="container">
+
+        <div class="footer-content">
+
+            <div>
+
+                <a href="../index.html"
+                   class="logo footer-logo">
+
+                     DANTO <span>Dental Studio</span>
+
+                </a>
+
+                <p>
+                    Professional dental care in a
+                    comfortable and welcoming environment.
+                </p>
+
+            </div>
+
+
+            <div>
+
+                <h3>
+                    Quick Links
+                </h3>
+
+                <a href="../index.html">
+                    Home
+                </a>
+
+                <a href="about.html">
+                    About
+                </a>
+
+                <a href="treatments.html">
+                    Treatments
+                </a>
+
+                <a href="contact.html">
+                    Contact
+                </a>
+
+            </div>
+
+
+            <div>
+
+                <h3>
+                    Contact
+                </h3>
+
+                <p>
+                    Your Clinic Address
+                </p>
+
+                <p>
+                    +91 98765 43210
+                </p>
+
+                <p>
+                     info@DANTODentalStudio .com
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 DANTO Dental Studio.
+                Demo website.
+            </p>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+
+<script src="../js/script.js"></script>
+
+</body>
+
+</html>

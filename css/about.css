@@ -1,0 +1,1308 @@
+/* =========================================================
+   DANTO Dental Studio
+   ABOUT PAGE
+   Premium Editorial / Modern Dental Design
+========================================================= */
+
+
+/* =========================================================
+   PAGE VARIABLES
+========================================================= */
+
+:root {
+    --about-primary: #0a5961;
+    --about-primary-dark: #063f47;
+    --about-accent: #79d9df;
+    --about-soft: #eef8f8;
+    --about-background: #f7fbfb;
+    --about-text: #17363a;
+    --about-muted: #667b7f;
+    --about-border: #dce9ea;
+    --about-white: #ffffff;
+}
+
+
+/* =========================================================
+   GLOBAL ABOUT PAGE
+========================================================= */
+
+body {
+    background: #ffffff;
+    color: var(--about-text);
+}
+
+
+/* =========================================================
+   COMMON CONTAINER
+========================================================= */
+
+.about-hero-new-content,
+.about-story .section-container,
+.about-belief .section-container,
+.about-experience .section-container,
+.about-environment .section-container {
+    width: 90%;
+    max-width: 1220px;
+    margin: 0 auto;
+}
+
+
+/* =========================================================
+   SECTION TAG
+========================================================= */
+
+.about-hero-new .section-tag,
+.about-story .section-tag,
+.about-belief .section-tag,
+.about-experience .section-tag,
+.about-environment .section-tag,
+.about-final-cta .section-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+
+    margin-bottom: 18px;
+
+    color: var(--about-primary);
+
+    font-size: 11px;
+    font-weight: 800;
+
+    letter-spacing: 2.2px;
+    text-transform: uppercase;
+}
+
+.about-hero-new .section-tag {
+    color: #a9e9ed;
+}
+
+.about-hero-new .section-tag::before,
+.about-story .section-tag::before,
+.about-belief .section-tag::before,
+.about-experience .section-tag::before,
+.about-environment .section-tag::before,
+.about-final-cta .section-tag::before {
+    content: "";
+
+    width: 28px;
+    height: 2px;
+
+    background: currentColor;
+}
+
+
+/* =========================================================
+   ABOUT HERO
+========================================================= */
+
+.about-hero-new {
+    position: relative;
+
+    min-height: 620px;
+
+    display: flex;
+    align-items: center;
+
+    overflow: hidden;
+
+    background:
+        linear-gradient(
+            115deg,
+            #063f47 0%,
+            #07535b 48%,
+            #0b6970 100%
+        );
+
+    isolation: isolate;
+}
+
+
+/*
+   Decorative background shapes
+*/
+
+.about-hero-new::before {
+    content: "";
+
+    position: absolute;
+
+    width: 520px;
+    height: 520px;
+
+    right: -150px;
+    top: -180px;
+
+    border-radius: 50%;
+
+    background: rgba(121, 217, 223, 0.09);
+
+    z-index: -1;
+}
+
+.about-hero-new::after {
+    content: "";
+
+    position: absolute;
+
+    width: 350px;
+    height: 350px;
+
+    left: -180px;
+    bottom: -200px;
+
+    border-radius: 50%;
+
+    border: 1px solid rgba(255,255,255,0.10);
+
+    z-index: -1;
+}
+
+
+/*
+   Optional background image
+   If you want clinic.png behind hero,
+   uncomment this section.
+*/
+
+.about-hero-new {
+    background-image:
+        linear-gradient(
+            90deg,
+            rgba(4, 48, 54, 0.97) 0%,
+            rgba(5, 67, 73, 0.91) 48%,
+            rgba(5, 67, 73, 0.72) 100%
+        ),
+        url("../images/clinic.png");
+
+    background-size: cover;
+    background-position: center;
+}
+
+
+/* Hero content */
+
+.about-hero-new-content {
+    position: relative;
+    z-index: 2;
+
+    padding: 100px 0;
+}
+
+
+.about-hero-new h1 {
+    max-width: 850px;
+
+    margin: 0 0 28px;
+
+    color: #ffffff;
+
+    font-size: clamp(50px, 6vw, 78px);
+
+    line-height: 1.02;
+
+    letter-spacing: -3px;
+
+    font-weight: 700;
+}
+
+
+.about-hero-new h1 span {
+    display: block;
+
+    color: var(--about-accent);
+}
+
+
+.about-hero-new p {
+    max-width: 600px;
+
+    margin: 0;
+
+    color: rgba(255,255,255,0.82);
+
+    font-size: 17px;
+
+    line-height: 1.8;
+}
+
+
+/* =========================================================
+   STORY SECTION
+========================================================= */
+
+.about-story {
+    padding: 125px 0;
+
+    background: #ffffff;
+}
+
+
+.about-story-grid {
+    display: grid;
+
+    grid-template-columns: 1.02fr 0.98fr;
+
+    gap: 95px;
+
+    align-items: center;
+}
+
+
+/* Image */
+
+.about-story-image {
+    position: relative;
+
+    min-height: 560px;
+
+    overflow: visible;
+}
+
+
+.about-story-image::before {
+    content: "";
+
+    position: absolute;
+
+    width: 75%;
+    height: 75%;
+
+    left: -25px;
+    bottom: -25px;
+
+    border-radius: 20px;
+
+    background: var(--about-soft);
+
+    z-index: 0;
+}
+
+
+.about-story-image::after {
+    content: "DANTO  Dental Studio";
+
+    position: absolute;
+
+    left: -12px;
+    top: 45px;
+
+    writing-mode: vertical-rl;
+
+    color: var(--about-primary);
+
+    font-size: 10px;
+    font-weight: 800;
+
+    letter-spacing: 3px;
+
+    z-index: 3;
+}
+
+
+.about-story-image img {
+    position: relative;
+    z-index: 2;
+
+    width: 100%;
+    height: 560px;
+
+    display: block;
+
+    object-fit: cover;
+
+    border-radius: 22px;
+
+    box-shadow:
+        0 30px 70px rgba(5, 57, 64, 0.15);
+}
+
+
+/* Content */
+
+.about-story-content {
+    max-width: 550px;
+}
+
+
+.about-story-content h2 {
+    margin: 0 0 28px;
+
+    color: var(--about-text);
+
+    font-size: clamp(38px, 4vw, 54px);
+
+    line-height: 1.08;
+
+    letter-spacing: -1.8px;
+}
+
+
+.about-story-content p {
+    margin: 0 0 17px;
+
+    color: var(--about-muted);
+
+    font-size: 16px;
+
+    line-height: 1.85;
+}
+
+
+.about-story-content .text-link {
+    display: inline-flex;
+
+    align-items: center;
+
+    margin-top: 17px;
+
+    padding-bottom: 7px;
+
+    border-bottom: 1px solid var(--about-primary);
+
+    color: var(--about-primary);
+
+    font-size: 14px;
+    font-weight: 800;
+
+    transition:
+        gap 0.25s ease,
+        color 0.25s ease;
+}
+
+
+.about-story-content .text-link:hover {
+    color: var(--about-primary-dark);
+}
+
+
+/* =========================================================
+   BELIEF SECTION
+========================================================= */
+
+.about-belief {
+    padding: 110px 0;
+
+    background:
+        linear-gradient(
+            135deg,
+            #f0f8f8 0%,
+            #f8fbfb 100%
+        );
+
+    border-top: 1px solid #e4eeee;
+    border-bottom: 1px solid #e4eeee;
+}
+
+
+.about-belief .section-container {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 100px;
+
+    align-items: center;
+}
+
+
+.about-belief-content {
+    max-width: 570px;
+}
+
+
+.about-belief-content h2 {
+    margin: 0 0 22px;
+
+    color: var(--about-text);
+
+    font-size: clamp(38px, 4vw, 52px);
+
+    line-height: 1.1;
+
+    letter-spacing: -1.7px;
+}
+
+
+.about-belief-content p {
+    max-width: 510px;
+
+    margin: 0;
+
+    color: var(--about-muted);
+
+    font-size: 16px;
+
+    line-height: 1.85;
+}
+
+
+/* Belief points */
+
+.about-belief-points {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    border-top: 1px solid #d4e4e5;
+    border-left: 1px solid #d4e4e5;
+}
+
+
+.about-belief-points > div {
+    min-height: 150px;
+
+    padding: 30px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: space-between;
+
+    border-right: 1px solid #d4e4e5;
+    border-bottom: 1px solid #d4e4e5;
+
+    background: rgba(255,255,255,0.48);
+
+    transition:
+        background 0.25s ease,
+        transform 0.25s ease;
+}
+
+
+.about-belief-points > div:hover {
+    background: #ffffff;
+
+    transform: translateY(-3px);
+}
+
+
+.about-belief-points span {
+    color: #91aaad;
+
+    font-size: 11px;
+    font-weight: 800;
+
+    letter-spacing: 1.5px;
+}
+
+
+.about-belief-points strong {
+    color: var(--about-text);
+
+    font-size: 20px;
+}
+
+
+/* =========================================================
+   PATIENT EXPERIENCE
+========================================================= */
+
+.about-experience {
+    padding: 130px 0;
+
+    background: #ffffff;
+}
+
+
+.about-experience-grid {
+    display: grid;
+
+    grid-template-columns: 0.92fr 1.08fr;
+
+    gap: 100px;
+
+    align-items: center;
+}
+
+
+/* Image */
+
+.about-experience-image {
+    position: relative;
+
+    overflow: hidden;
+
+    border-radius: 22px;
+
+    box-shadow:
+        0 25px 65px rgba(5, 57, 64, 0.14);
+}
+
+
+.about-experience-image::after {
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    background:
+        linear-gradient(
+            180deg,
+            transparent 55%,
+            rgba(3, 50, 56, 0.18)
+        );
+
+    pointer-events: none;
+}
+
+
+.about-experience-image img {
+    width: 100%;
+    height: 600px;
+
+    display: block;
+
+    object-fit: cover;
+
+    transition: transform 0.5s ease;
+}
+
+
+.about-experience-image:hover img {
+    transform: scale(1.025);
+}
+
+
+/* Content */
+
+.about-experience-content {
+    max-width: 570px;
+}
+
+
+.about-experience-content h2 {
+    margin: 0 0 23px;
+
+    color: var(--about-text);
+
+    font-size: clamp(38px, 4vw, 52px);
+
+    line-height: 1.08;
+
+    letter-spacing: -1.7px;
+}
+
+
+.about-experience-content > p {
+    margin: 0 0 35px;
+
+    color: var(--about-muted);
+
+    font-size: 16px;
+
+    line-height: 1.85;
+}
+
+
+/* Experience points */
+
+.experience-points {
+    border-top: 1px solid var(--about-border);
+}
+
+
+.experience-point {
+    display: grid;
+
+    grid-template-columns: 45px 1fr;
+
+    gap: 20px;
+
+    padding: 23px 0;
+
+    border-bottom: 1px solid var(--about-border);
+}
+
+
+.experience-point > span {
+    width: 40px;
+    height: 40px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: var(--about-soft);
+
+    color: var(--about-primary);
+
+    font-size: 10px;
+    font-weight: 800;
+}
+
+
+.experience-point h3 {
+    margin: 0 0 6px;
+
+    color: var(--about-text);
+
+    font-size: 17px;
+}
+
+
+.experience-point p {
+    margin: 0;
+
+    color: var(--about-muted);
+
+    font-size: 14px;
+
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   ENVIRONMENT
+========================================================= */
+
+.about-environment {
+    padding: 125px 0;
+
+    background: var(--about-background);
+}
+
+
+.about-environment-heading {
+    max-width: 720px;
+
+    margin-bottom: 60px;
+}
+
+
+.about-environment-heading h2 {
+    max-width: 700px;
+
+    margin: 0 0 20px;
+
+    color: var(--about-text);
+
+    font-size: clamp(40px, 4vw, 56px);
+
+    line-height: 1.08;
+
+    letter-spacing: -1.8px;
+}
+
+
+.about-environment-heading p {
+    max-width: 650px;
+
+    margin: 0;
+
+    color: var(--about-muted);
+
+    font-size: 16px;
+
+    line-height: 1.8;
+}
+
+
+/* Environment cards */
+
+.about-environment-grid {
+    display: grid;
+
+    grid-template-columns:
+        1fr 1fr 1fr;
+
+    gap: 22px;
+}
+
+
+.environment-card {
+    position: relative;
+
+    overflow: hidden;
+
+    min-height: 455px;
+
+    border-radius: 20px;
+
+    background: #ffffff;
+
+    box-shadow:
+        0 12px 35px rgba(5, 57, 64, 0.07);
+
+    transition:
+        transform 0.35s ease,
+        box-shadow 0.35s ease;
+}
+
+
+.environment-card:hover {
+    transform: translateY(-8px);
+
+    box-shadow:
+        0 25px 55px rgba(5, 57, 64, 0.13);
+}
+
+
+/* Image */
+
+.environment-card img {
+    width: 100%;
+    height: 315px;
+
+    display: block;
+
+    object-fit: cover;
+
+    transition: transform 0.5s ease;
+}
+
+
+.environment-card:hover img {
+    transform: scale(1.045);
+}
+
+
+/* Card content */
+
+.environment-card > div {
+    padding: 25px 27px 28px;
+}
+
+
+.environment-card h3 {
+    margin: 0 0 9px;
+
+    color: var(--about-text);
+
+    font-size: 19px;
+}
+
+
+.environment-card p {
+    margin: 0;
+
+    color: var(--about-muted);
+
+    font-size: 13px;
+
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   FINAL CTA
+========================================================= */
+
+.about-final-cta {
+    position: relative;
+
+    overflow: hidden;
+
+    padding: 125px 20px;
+
+    background:
+        linear-gradient(
+            120deg,
+            #063f47 0%,
+            #075963 55%,
+            #0a6b73 100%
+        );
+
+    text-align: center;
+
+    isolation: isolate;
+}
+
+
+.about-final-cta::before {
+    content: "";
+
+    position: absolute;
+
+    width: 500px;
+    height: 500px;
+
+    right: -170px;
+    top: -250px;
+
+    border-radius: 50%;
+
+    background: rgba(121, 217, 223, 0.10);
+
+    z-index: -1;
+}
+
+
+.about-final-cta::after {
+    content: "";
+
+    position: absolute;
+
+    width: 350px;
+    height: 350px;
+
+    left: -200px;
+    bottom: -220px;
+
+    border-radius: 50%;
+
+    border: 1px solid rgba(255,255,255,0.09);
+
+    z-index: -1;
+}
+
+
+.about-final-cta-content {
+    max-width: 780px;
+
+    margin: 0 auto;
+}
+
+
+.about-final-cta .section-tag {
+    color: #a9e9ed;
+
+    justify-content: center;
+}
+
+
+.about-final-cta h2 {
+    margin: 0 0 22px;
+
+    color: #ffffff;
+
+    font-size: clamp(42px, 5vw, 65px);
+
+    line-height: 1.06;
+
+    letter-spacing: -2px;
+}
+
+
+.about-final-cta p {
+    max-width: 570px;
+
+    margin: 0 auto 35px;
+
+    color: rgba(255,255,255,0.78);
+
+    font-size: 16px;
+
+    line-height: 1.8;
+}
+
+
+/* Buttons */
+
+.about-final-buttons {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 13px;
+
+    flex-wrap: wrap;
+}
+
+
+.about-final-buttons .btn {
+    min-height: 52px;
+
+    padding: 0 28px;
+
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 6px;
+
+    font-size: 13px;
+
+    font-weight: 800;
+
+    transition:
+        transform 0.25s ease,
+        background 0.25s ease,
+        color 0.25s ease;
+}
+
+
+.about-final-buttons .btn:hover {
+    transform: translateY(-3px);
+}
+
+
+.btn-white {
+    background: #ffffff;
+
+    color: var(--about-primary-dark);
+}
+
+
+.btn-white:hover {
+    background: #effafa;
+}
+
+
+.btn-outline-white {
+    border: 1px solid rgba(255,255,255,0.45);
+
+    color: #ffffff;
+
+    background: transparent;
+}
+
+
+.btn-outline-white:hover {
+    background: rgba(255,255,255,0.10);
+
+    border-color: #ffffff;
+}
+
+
+/* =========================================================
+   FOOTER VISUAL IMPROVEMENT
+   Only affects About page footer
+========================================================= */
+
+body:has(.about-hero-new) footer {
+    border-top: none;
+}
+
+
+/* =========================================================
+   RESPONSIVE - 1100px
+========================================================= */
+
+@media (max-width: 1100px) {
+
+    .about-story-grid,
+    .about-experience-grid {
+        gap: 60px;
+    }
+
+    .about-belief .section-container {
+        gap: 60px;
+    }
+
+    .about-story-image,
+    .about-story-image img {
+        height: 500px;
+        min-height: 500px;
+    }
+
+    .about-experience-image img {
+        height: 530px;
+    }
+
+}
+
+
+/* =========================================================
+   RESPONSIVE - 900px
+========================================================= */
+
+@media (max-width: 900px) {
+
+    .about-hero-new {
+        min-height: 570px;
+    }
+
+
+    .about-story,
+    .about-experience,
+    .about-environment {
+        padding: 90px 0;
+    }
+
+
+    .about-story-grid,
+    .about-experience-grid,
+    .about-belief .section-container {
+        grid-template-columns: 1fr;
+
+        gap: 55px;
+    }
+
+
+    .about-story-content,
+    .about-experience-content,
+    .about-belief-content {
+        max-width: 680px;
+    }
+
+
+    .about-story-image {
+        min-height: auto;
+    }
+
+
+    .about-story-image img {
+        height: 500px;
+        min-height: 0;
+    }
+
+
+    .about-experience-image img {
+        height: 500px;
+    }
+
+
+    .about-environment-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+
+    .environment-card:last-child {
+        grid-column: span 2;
+
+        max-width: calc(50% - 11px);
+    }
+
+}
+
+
+/* =========================================================
+   RESPONSIVE - 768px
+========================================================= */
+
+@media (max-width: 768px) {
+
+    .about-hero-new {
+        min-height: 540px;
+
+        background-position: center;
+    }
+
+
+    .about-hero-new-content {
+        padding: 80px 0;
+    }
+
+
+    .about-hero-new h1 {
+        font-size: 48px;
+
+        letter-spacing: -1.8px;
+    }
+
+
+    .about-hero-new p {
+        font-size: 15px;
+    }
+
+
+    .about-story,
+    .about-experience,
+    .about-environment {
+        padding: 75px 0;
+    }
+
+
+    .about-belief {
+        padding: 75px 0;
+    }
+
+
+    .about-story-content h2,
+    .about-belief-content h2,
+    .about-experience-content h2,
+    .about-environment-heading h2 {
+        font-size: 37px;
+
+        letter-spacing: -1.2px;
+    }
+
+
+    .about-story-image img {
+        height: 400px;
+    }
+
+
+    .about-story-image::after {
+        display: none;
+    }
+
+
+    .about-experience-image img {
+        height: 400px;
+    }
+
+
+    .about-belief-points > div {
+        min-height: 130px;
+
+        padding: 24px;
+    }
+
+
+    .about-environment-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .environment-card:last-child {
+        grid-column: auto;
+
+        max-width: none;
+    }
+
+
+    .environment-card {
+        min-height: auto;
+    }
+
+
+    .environment-card img {
+        height: 280px;
+    }
+
+
+    .about-final-cta {
+        padding: 90px 20px;
+    }
+
+
+    .about-final-cta h2 {
+        font-size: 43px;
+
+        letter-spacing: -1.4px;
+    }
+
+}
+
+
+/* =========================================================
+   RESPONSIVE - 520px
+========================================================= */
+
+@media (max-width: 520px) {
+
+    .about-hero-new-content,
+    .about-story .section-container,
+    .about-belief .section-container,
+    .about-experience .section-container,
+    .about-environment .section-container {
+        width: 88%;
+    }
+
+
+    .about-hero-new {
+        min-height: 500px;
+    }
+
+
+    .about-hero-new h1 {
+        font-size: 41px;
+
+        letter-spacing: -1.4px;
+    }
+
+
+    .about-hero-new p {
+        font-size: 14px;
+
+        line-height: 1.7;
+    }
+
+
+    .about-story-content h2,
+    .about-belief-content h2,
+    .about-experience-content h2,
+    .about-environment-heading h2 {
+        font-size: 32px;
+    }
+
+
+    .about-story-image img {
+        height: 330px;
+
+        border-radius: 16px;
+    }
+
+
+    .about-story-image::before {
+        left: -12px;
+        bottom: -12px;
+    }
+
+
+    .about-belief-points {
+        grid-template-columns: 1fr;
+    }
+
+
+    .about-belief-points > div {
+        min-height: 110px;
+    }
+
+
+    .about-experience-image img {
+        height: 330px;
+    }
+
+
+    .experience-point {
+        grid-template-columns: 40px 1fr;
+
+        gap: 15px;
+    }
+
+
+    .about-environment-heading {
+        margin-bottom: 35px;
+    }
+
+
+    .environment-card img {
+        height: 245px;
+    }
+
+
+    .environment-card > div {
+        padding: 22px;
+    }
+
+
+    .about-final-cta {
+        padding: 75px 20px;
+    }
+
+
+    .about-final-cta h2 {
+        font-size: 36px;
+    }
+
+
+    .about-final-buttons {
+        flex-direction: column;
+
+        align-items: stretch;
+    }
+
+
+    .about-final-buttons .btn {
+        width: 100%;
+    }
+
+}
+
+
+/* =========================================================
+   ACCESSIBILITY
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .about-story-content .text-link,
+    .environment-card,
+    .environment-card img,
+    .about-experience-image img,
+    .about-belief-points > div,
+    .about-final-buttons .btn {
+        transition: none;
+    }
+
+}

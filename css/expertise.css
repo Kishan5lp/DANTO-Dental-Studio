@@ -1,0 +1,1289 @@
+/* =========================================================
+   DANTO Dental Studio
+   EXPERTISE PAGE
+   Premium Clinical / Editorial Design
+========================================================= */
+
+
+/* =========================================================
+   VARIABLES
+========================================================= */
+
+:root {
+    --expert-primary: #0a5961;
+    --expert-primary-dark: #063f47;
+    --expert-accent: #79d9df;
+
+    --expert-soft: #eef8f8;
+    --expert-background: #f7fbfb;
+
+    --expert-text: #17363a;
+    --expert-muted: #667b7f;
+
+    --expert-border: #dce9ea;
+}
+
+
+/* =========================================================
+   COMMON CONTAINER
+========================================================= */
+
+.expertise-page-hero .page-hero-content,
+.expertise-intro .section-container,
+.expertise-areas .section-container,
+.expertise-process .section-container,
+.modern-dentistry .section-container {
+    width: 90%;
+    max-width: 1220px;
+    margin: 0 auto;
+}
+
+
+/* =========================================================
+   COMMON SECTION TAG
+========================================================= */
+
+.expertise-intro .section-tag,
+.expertise-areas .section-tag,
+.expertise-process .section-tag,
+.modern-dentistry .section-tag,
+.expertise-cta .section-tag {
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    margin-bottom: 17px;
+
+    color: var(--expert-primary);
+
+    font-size: 11px;
+
+    font-weight: 800;
+
+    letter-spacing: 2.2px;
+
+    text-transform: uppercase;
+}
+
+
+.expertise-intro .section-tag::before,
+.expertise-areas .section-tag::before,
+.expertise-process .section-tag::before,
+.modern-dentistry .section-tag::before,
+.expertise-cta .section-tag::before {
+    content: "";
+
+    width: 28px;
+    height: 2px;
+
+    background: currentColor;
+}
+
+
+/* =========================================================
+   PAGE HERO
+========================================================= */
+
+.expertise-page-hero {
+    position: relative;
+
+    min-height: 570px;
+
+    display: flex;
+
+    align-items: center;
+
+    overflow: hidden;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(3, 43, 50, 0.96) 0%,
+            rgba(5, 67, 74, 0.88) 48%,
+            rgba(5, 67, 74, 0.63) 100%
+        ),
+        url("../images/consultation.png");
+
+    background-size: cover;
+
+    background-position: center;
+
+    isolation: isolate;
+}
+
+
+/* Decorative circles */
+
+.expertise-page-hero::before {
+    content: "";
+
+    position: absolute;
+
+    width: 520px;
+    height: 520px;
+
+    right: -220px;
+    top: -220px;
+
+    border-radius: 50%;
+
+    border: 1px solid rgba(255,255,255,0.13);
+
+    z-index: -1;
+}
+
+
+.expertise-page-hero::after {
+    content: "";
+
+    position: absolute;
+
+    width: 300px;
+    height: 300px;
+
+    right: 80px;
+    bottom: -230px;
+
+    border-radius: 50%;
+
+    background: rgba(121,217,223,0.08);
+
+    z-index: -1;
+}
+
+
+/* Hero content */
+
+.expertise-page-hero .page-hero-content {
+    position: relative;
+
+    z-index: 2;
+
+    padding: 100px 0;
+}
+
+
+.expertise-page-hero .page-hero-content > span {
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    margin-bottom: 20px;
+
+    color: #a9e9ed;
+
+    font-size: 11px;
+
+    font-weight: 800;
+
+    letter-spacing: 2.5px;
+}
+
+
+.expertise-page-hero .page-hero-content > span::before {
+    content: "";
+
+    width: 30px;
+    height: 2px;
+
+    background: #79d9df;
+}
+
+
+.expertise-page-hero h1 {
+    max-width: 850px;
+
+    margin: 0 0 25px;
+
+    color: #ffffff;
+
+    font-size: clamp(48px, 6vw, 74px);
+
+    line-height: 1.04;
+
+    letter-spacing: -2.5px;
+
+    font-weight: 700;
+}
+
+
+.expertise-page-hero p {
+    max-width: 600px;
+
+    margin: 0;
+
+    color: rgba(255,255,255,0.80);
+
+    font-size: 17px;
+
+    line-height: 1.8;
+}
+
+
+/* =========================================================
+   INTRODUCTION
+========================================================= */
+
+.expertise-intro {
+    padding: 125px 0;
+
+    background: #ffffff;
+}
+
+
+.expertise-intro-grid {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 95px;
+
+    align-items: center;
+}
+
+
+/* Image */
+
+.expertise-intro-image {
+    position: relative;
+
+    overflow: visible;
+}
+
+
+.expertise-intro-image::before {
+    content: "";
+
+    position: absolute;
+
+    width: 78%;
+    height: 75%;
+
+    left: -25px;
+    bottom: -25px;
+
+    border-radius: 22px;
+
+    background: var(--expert-soft);
+
+    z-index: 0;
+}
+
+
+.expertise-intro-image::after {
+    content: "EXPERTISE";
+
+    position: absolute;
+
+    left: -13px;
+    top: 50px;
+
+    writing-mode: vertical-rl;
+
+    color: var(--expert-primary);
+
+    font-size: 10px;
+
+    font-weight: 800;
+
+    letter-spacing: 3px;
+
+    z-index: 3;
+}
+
+
+.expertise-intro-image img {
+    position: relative;
+
+    z-index: 2;
+
+    width: 100%;
+
+    height: 550px;
+
+    display: block;
+
+    object-fit: cover;
+
+    border-radius: 22px;
+
+    box-shadow:
+        0 30px 70px rgba(5,57,64,0.15);
+}
+
+
+/* Content */
+
+.expertise-intro-content {
+    max-width: 560px;
+}
+
+
+.expertise-intro-content h2 {
+    margin: 0 0 25px;
+
+    color: var(--expert-text);
+
+    font-size: clamp(38px, 4vw, 53px);
+
+    line-height: 1.08;
+
+    letter-spacing: -1.7px;
+}
+
+
+.expertise-intro-content p {
+    margin: 0 0 17px;
+
+    color: var(--expert-muted);
+
+    font-size: 16px;
+
+    line-height: 1.85;
+}
+
+
+/* Button */
+
+.expertise-intro-content .btn-primary {
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    min-height: 51px;
+
+    margin-top: 17px;
+
+    padding: 0 25px;
+
+    border-radius: 6px;
+
+    background: var(--expert-primary);
+
+    color: #ffffff;
+
+    font-size: 13px;
+
+    font-weight: 800;
+
+    transition:
+        transform 0.25s ease,
+        background 0.25s ease;
+}
+
+
+.expertise-intro-content .btn-primary:hover {
+    background: var(--expert-primary-dark);
+
+    transform: translateY(-3px);
+}
+
+
+/* =========================================================
+   AREAS OF EXPERTISE
+========================================================= */
+
+.expertise-areas {
+    padding: 125px 0;
+
+    background: var(--expert-background);
+
+    border-top: 1px solid #e4eeee;
+    border-bottom: 1px solid #e4eeee;
+}
+
+
+/* Heading */
+
+.expertise-areas .section-heading {
+    max-width: 720px;
+
+    margin-bottom: 60px;
+}
+
+
+.expertise-areas .section-heading h2,
+.expertise-process .section-heading h2 {
+    margin: 0 0 18px;
+
+    color: var(--expert-text);
+
+    font-size: clamp(40px, 4vw, 55px);
+
+    line-height: 1.08;
+
+    letter-spacing: -1.7px;
+}
+
+
+.expertise-areas .section-heading p,
+.expertise-process .section-heading p {
+    max-width: 650px;
+
+    margin: 0;
+
+    color: var(--expert-muted);
+
+    font-size: 16px;
+
+    line-height: 1.8;
+}
+
+
+/* Expertise cards */
+
+.expertise-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 20px;
+}
+
+
+.expertise-card {
+    position: relative;
+
+    min-height: 335px;
+
+    padding: 32px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    background: #ffffff;
+
+    border: 1px solid var(--expert-border);
+
+    border-radius: 16px;
+
+    box-shadow:
+        0 8px 30px rgba(5,57,64,0.035);
+
+    overflow: hidden;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        border-color 0.3s ease;
+}
+
+
+.expertise-card::after {
+    content: "";
+
+    position: absolute;
+
+    width: 110px;
+    height: 110px;
+
+    right: -55px;
+    bottom: -55px;
+
+    border-radius: 50%;
+
+    background: var(--expert-soft);
+
+    transition:
+        transform 0.35s ease;
+}
+
+
+.expertise-card:hover {
+    transform: translateY(-7px);
+
+    border-color: #c8dfe1;
+
+    box-shadow:
+        0 22px 50px rgba(5,57,64,0.10);
+}
+
+
+.expertise-card:hover::after {
+    transform: scale(1.35);
+}
+
+
+/* Number */
+
+.expertise-icon {
+    width: 47px;
+    height: 47px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 28px;
+
+    border-radius: 50%;
+
+    background: var(--expert-soft);
+
+    color: var(--expert-primary);
+
+    font-size: 10px;
+
+    font-weight: 800;
+
+    letter-spacing: 1px;
+}
+
+
+/* Card title */
+
+.expertise-card h3 {
+    margin: 0 0 13px;
+
+    color: var(--expert-text);
+
+    font-size: 20px;
+
+    line-height: 1.3;
+}
+
+
+.expertise-card p {
+    margin: 0;
+
+    color: var(--expert-muted);
+
+    font-size: 14px;
+
+    line-height: 1.75;
+}
+
+
+/* Card link */
+
+.expertise-card a {
+    position: relative;
+
+    z-index: 2;
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    margin-top: auto;
+    padding-top: 25px;
+
+    color: var(--expert-primary);
+
+    font-size: 13px;
+
+    font-weight: 800;
+
+    transition: gap 0.25s ease;
+}
+
+
+.expertise-card a:hover {
+    gap: 13px;
+}
+
+
+/* =========================================================
+   PROCESS
+========================================================= */
+
+.expertise-process {
+    padding: 125px 0;
+
+    background: #ffffff;
+}
+
+
+.expertise-process .section-heading {
+    max-width: 720px;
+
+    margin-bottom: 60px;
+}
+
+
+/* Process grid */
+
+.process-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    border-top: 1px solid var(--expert-border);
+
+    border-left: 1px solid var(--expert-border);
+}
+
+
+/* Process item */
+
+.process-item {
+    min-height: 270px;
+
+    padding: 30px;
+
+    border-right: 1px solid var(--expert-border);
+
+    border-bottom: 1px solid var(--expert-border);
+
+    transition:
+        background 0.25s ease;
+}
+
+
+.process-item:hover {
+    background: var(--expert-background);
+}
+
+
+/* Number */
+
+.process-number {
+    width: 50px;
+    height: 50px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 55px;
+
+    border-radius: 50%;
+
+    background: var(--expert-primary);
+
+    color: #ffffff;
+
+    font-size: 10px;
+
+    font-weight: 800;
+
+    letter-spacing: 1px;
+}
+
+
+.process-item h3 {
+    margin: 0 0 9px;
+
+    color: var(--expert-text);
+
+    font-size: 20px;
+}
+
+
+.process-item p {
+    margin: 0;
+
+    color: var(--expert-muted);
+
+    font-size: 14px;
+
+    line-height: 1.75;
+}
+
+
+/* =========================================================
+   MODERN DENTISTRY
+========================================================= */
+
+.modern-dentistry {
+    padding: 125px 0;
+
+    background:
+        linear-gradient(
+            135deg,
+            #f0f8f8 0%,
+            #f8fbfb 100%
+        );
+}
+
+
+.modern-dentistry-grid {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 95px;
+
+    align-items: center;
+}
+
+
+/* Content */
+
+.modern-dentistry-content {
+    max-width: 570px;
+}
+
+
+.modern-dentistry-content h2 {
+    margin: 0 0 22px;
+
+    color: var(--expert-text);
+
+    font-size: clamp(38px, 4vw, 52px);
+
+    line-height: 1.08;
+
+    letter-spacing: -1.7px;
+}
+
+
+.modern-dentistry-content > p {
+    margin: 0 0 32px;
+
+    color: var(--expert-muted);
+
+    font-size: 16px;
+
+    line-height: 1.85;
+}
+
+
+/* Modern points */
+
+.modern-points {
+    border-top: 1px solid var(--expert-border);
+}
+
+
+.modern-points > div {
+    display: flex;
+
+    align-items: center;
+
+    gap: 14px;
+
+    padding: 16px 0;
+
+    border-bottom: 1px solid var(--expert-border);
+}
+
+
+.modern-points strong {
+    width: 25px;
+    height: 25px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: var(--expert-primary);
+
+    color: #ffffff;
+
+    font-size: 11px;
+}
+
+
+.modern-points span {
+    color: var(--expert-text);
+
+    font-size: 14px;
+
+    font-weight: 600;
+}
+
+
+/* Image */
+
+.modern-dentistry-image {
+    position: relative;
+
+    overflow: hidden;
+
+    border-radius: 22px;
+
+    box-shadow:
+        0 30px 70px rgba(5,57,64,0.13);
+}
+
+
+.modern-dentistry-image::after {
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    background:
+        linear-gradient(
+            180deg,
+            transparent 55%,
+            rgba(3,50,56,0.18)
+        );
+
+    pointer-events: none;
+}
+
+
+.modern-dentistry-image img {
+    width: 100%;
+
+    height: 570px;
+
+    display: block;
+
+    object-fit: cover;
+
+    transition:
+        transform 0.5s ease;
+}
+
+
+.modern-dentistry-image:hover img {
+    transform: scale(1.025);
+}
+
+
+/* =========================================================
+   CTA
+========================================================= */
+
+.expertise-cta {
+    position: relative;
+
+    overflow: hidden;
+
+    padding: 120px 20px;
+
+    background:
+        linear-gradient(
+            120deg,
+            #063f47 0%,
+            #075963 55%,
+            #0a6b73 100%
+        );
+
+    text-align: center;
+
+    isolation: isolate;
+}
+
+
+.expertise-cta::before {
+    content: "";
+
+    position: absolute;
+
+    width: 500px;
+    height: 500px;
+
+    right: -200px;
+    top: -260px;
+
+    border-radius: 50%;
+
+    background: rgba(121,217,223,0.10);
+
+    z-index: -1;
+}
+
+
+.expertise-cta::after {
+    content: "";
+
+    position: absolute;
+
+    width: 350px;
+    height: 350px;
+
+    left: -210px;
+    bottom: -230px;
+
+    border-radius: 50%;
+
+    border: 1px solid rgba(255,255,255,0.10);
+
+    z-index: -1;
+}
+
+
+.expertise-cta .cta-content {
+    max-width: 780px;
+
+    margin: 0 auto;
+}
+
+
+.expertise-cta .section-tag {
+    justify-content: center;
+
+    color: #a9e9ed;
+}
+
+
+.expertise-cta h2 {
+    margin: 0 0 20px;
+
+    color: #ffffff;
+
+    font-size: clamp(40px, 5vw, 62px);
+
+    line-height: 1.08;
+
+    letter-spacing: -1.8px;
+}
+
+
+.expertise-cta p {
+    max-width: 580px;
+
+    margin: 0 auto 32px;
+
+    color: rgba(255,255,255,0.78);
+
+    font-size: 16px;
+
+    line-height: 1.8;
+}
+
+
+.expertise-cta .btn-white {
+    min-height: 52px;
+
+    padding: 0 28px;
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 6px;
+
+    background: #ffffff;
+
+    color: var(--expert-primary-dark);
+
+    font-size: 13px;
+
+    font-weight: 800;
+
+    transition:
+        transform 0.25s ease,
+        background 0.25s ease;
+}
+
+
+.expertise-cta .btn-white:hover {
+    background: #effafa;
+
+    transform: translateY(-3px);
+}
+
+
+/* =========================================================
+   RESPONSIVE - 1100px
+========================================================= */
+
+@media (max-width: 1100px) {
+
+    .expertise-intro-grid,
+    .modern-dentistry-grid {
+        gap: 60px;
+    }
+
+
+    .expertise-intro-image img {
+        height: 500px;
+    }
+
+
+    .modern-dentistry-image img {
+        height: 520px;
+    }
+
+
+    .process-item {
+        padding: 25px;
+    }
+
+}
+
+
+/* =========================================================
+   RESPONSIVE - 950px
+========================================================= */
+
+@media (max-width: 950px) {
+
+    .expertise-intro-grid,
+    .modern-dentistry-grid {
+        grid-template-columns: 1fr;
+
+        gap: 55px;
+    }
+
+
+    .expertise-intro-content,
+    .modern-dentistry-content {
+        max-width: 700px;
+    }
+
+
+    .expertise-intro-image img {
+        height: 480px;
+    }
+
+
+    .modern-dentistry-image img {
+        height: 480px;
+    }
+
+
+    .expertise-grid {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+
+    .process-grid {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+}
+
+
+/* =========================================================
+   RESPONSIVE - 768px
+========================================================= */
+
+@media (max-width: 768px) {
+
+    .expertise-page-hero {
+        min-height: 520px;
+
+        background-position: center;
+    }
+
+
+    .expertise-page-hero .page-hero-content {
+        padding: 80px 0;
+    }
+
+
+    .expertise-page-hero h1 {
+        font-size: 48px;
+
+        letter-spacing: -1.5px;
+    }
+
+
+    .expertise-page-hero p {
+        font-size: 15px;
+    }
+
+
+    .expertise-intro,
+    .expertise-areas,
+    .expertise-process,
+    .modern-dentistry {
+        padding: 85px 0;
+    }
+
+
+    .expertise-intro-content h2,
+    .modern-dentistry-content h2,
+    .expertise-areas .section-heading h2,
+    .expertise-process .section-heading h2 {
+        font-size: 37px;
+
+        letter-spacing: -1.2px;
+    }
+
+
+    .expertise-intro-image img {
+        height: 400px;
+    }
+
+
+    .expertise-intro-image::after {
+        display: none;
+    }
+
+
+    .expertise-card {
+        min-height: 315px;
+
+        padding: 27px;
+    }
+
+
+    .process-item {
+        min-height: 240px;
+    }
+
+
+    .process-number {
+        margin-bottom: 40px;
+    }
+
+
+    .modern-dentistry-image img {
+        height: 400px;
+    }
+
+
+    .expertise-cta {
+        padding: 90px 20px;
+    }
+
+
+    .expertise-cta h2 {
+        font-size: 43px;
+    }
+
+}
+
+
+/* =========================================================
+   RESPONSIVE - 520px
+========================================================= */
+
+@media (max-width: 520px) {
+
+    .expertise-page-hero .page-hero-content,
+    .expertise-intro .section-container,
+    .expertise-areas .section-container,
+    .expertise-process .section-container,
+    .modern-dentistry .section-container {
+        width: 88%;
+    }
+
+
+    .expertise-page-hero {
+        min-height: 500px;
+    }
+
+
+    .expertise-page-hero h1 {
+        font-size: 40px;
+
+        letter-spacing: -1.2px;
+    }
+
+
+    .expertise-page-hero p {
+        font-size: 14px;
+
+        line-height: 1.7;
+    }
+
+
+    .expertise-intro,
+    .expertise-areas,
+    .expertise-process,
+    .modern-dentistry {
+        padding: 70px 0;
+    }
+
+
+    .expertise-intro-content h2,
+    .modern-dentistry-content h2,
+    .expertise-areas .section-heading h2,
+    .expertise-process .section-heading h2 {
+        font-size: 32px;
+    }
+
+
+    .expertise-intro-image img {
+        height: 330px;
+
+        border-radius: 17px;
+    }
+
+
+    .expertise-intro-image::before {
+        left: -12px;
+        bottom: -12px;
+    }
+
+
+    .expertise-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .expertise-card {
+        min-height: 300px;
+
+        padding: 25px;
+    }
+
+
+    .process-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .process-item {
+        min-height: auto;
+
+        padding: 25px;
+    }
+
+
+    .process-number {
+        margin-bottom: 35px;
+    }
+
+
+    .modern-dentistry-image img {
+        height: 330px;
+    }
+
+
+    .expertise-cta {
+        padding: 75px 20px;
+    }
+
+
+    .expertise-cta h2 {
+        font-size: 36px;
+
+        letter-spacing: -1.2px;
+    }
+
+
+    .expertise-cta p {
+        font-size: 14px;
+    }
+
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .expertise-card,
+    .expertise-card::after,
+    .modern-dentistry-image img,
+    .expertise-intro-content .btn-primary,
+    .expertise-card a,
+    .expertise-cta .btn-white {
+        transition: none;
+    }
+
+}
